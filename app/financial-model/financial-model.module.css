@@ -1,0 +1,259 @@
+
+.ctabutton {
+  display: block;
+  padding: 10px 22px;
+  background-color: #e6bf35;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700; 
+ 
+}
+
+.ctabutton:hover {
+  background-color: #b89738;
+ 
+}
+
+
+.anchor{
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherits text color from parent */
+  background: none;       /* Removes any background */
+  border: none;           /* Removes any border */
+  padding: 0;             /* Removes any padding */
+  margin: 0;              /* Removes any margin */
+  font: inherit;          /* Inherits font properties from parent */
+  outline: none;          /* Removes focus outline */
+}
+
+.herobg{
+  background-color: #fbfcf8;
+  padding: 50px;
+  background-image: url('/images/laptopimg.png'); /* Update with the correct path to your image */
+  background-size: contain auto; /* Adjusts the image to cover the whole div */
+  /* Centers the image */
+  background-position: 75% center; /* Moves the image 10% from the left edge */
+  background-repeat: no-repeat; /* Pre
+  vents the image from repeating */
+  
+}
+
+.hero{
+  padding-top: 200px !important;
+  background-color: #ffffffe0;
+  max-width: 380px;
+  padding: 50px 50px;
+
+  position: relative;
+  left: 10%;
+  border-radius: 20px;
+  
+}
+
+.hero1{
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: #e6c03548;
+  max-width: 275px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+}
+.hero2{
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color:#3a3318;
+}
+
+.herolist{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  margin-bottom: 30px;
+  color:#3a3318;
+}
+
+.herolistitem{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.entire{
+  background-color: #fbfcf8;
+  padding-top: 50px;
+}
+
+.component{
+  margin: 50px auto;
+  margin-top: 0px !important;
+  max-width: 1000px;
+  color:#3a3318;
+  padding-bottom: 80px;
+}
+
+.componenttext{
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0px 70px;
+  margin-bottom: 50px;
+ 
+}
+
+.componentlist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+
+.componenticon{
+  font-size: 6rem;
+}
+
+.componentdes{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.componentitem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.whyContainer {
+  text-align: center;
+  padding: 40px;
+  background-color: #fafafa; /* Adjust the background color as needed */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.whyTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+}
+
+.whyDescription {
+  font-size: 1rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.whyList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.whyListItem {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+
+.whyHighlight {
+  font-weight: bold;
+  color: #000;
+}
+
+.whyFooter {
+  font-size: 1rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+
+.stepContainer {
+  padding: 40px;
+  background-color: #fafafa; /* Adjust background color as needed */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stepTitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-bottom: 30px;
+}
+
+.stepSection {
+  margin-bottom: 40px;
+}
+
+.stepHeader {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+
+.stepDescription {
+  font-size: 1rem;
+  color: #6b6b6b;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.stepListItem {
+  font-size: 0.95rem;
+  color: #6b6b6b;
+  margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 750px){
+  .hero{
+    position: static;
+    padding: 20px 20px;
+    background-color: #ffffffe0;
+  }
+  .hero2{
+    font-size: 2rem;
+  }
+  .herolistitem{
+    font-size: 1rem;
+  }
+  .componentlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+    padding: 0px 20px;
+  }
+
+  .componenttext{
+    font-size: 2.3rem;
+  }
+
+  .componenticon{
+    font-size: 4rem;
+  }
+  
+  .componentdes{
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}

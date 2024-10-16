@@ -1,0 +1,718 @@
+
+.ctabutton {
+    display: block;
+    padding: 10px 22px;
+    background-color: #e6bf35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700; 
+   
+  }
+  
+  .ctabutton:hover {
+    background-color: #b89738;
+   
+  }
+
+  
+.anchor{
+    text-decoration: none;  /* Removes underline */
+    color: inherit;         /* Inherits text color from parent */
+    background: none;       /* Removes any background */
+    border: none;           /* Removes any border */
+    padding: 0;             /* Removes any padding */
+    margin: 0;              /* Removes any margin */
+    font: inherit;          /* Inherits font properties from parent */
+    outline: none;          /* Removes focus outline */
+  }
+
+.checking{
+    background-color: aqua;
+}
+
+/* components/TextRotator.module.css */
+.hero1 {
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    position: relative; /* Allows absolute positioning of the text */
+  }
+  
+  .text {
+    color: #e6bf35;
+    width: 300px;
+    position: absolute;
+    opacity: 0;
+    animation: rotateText 6s infinite; /* Total duration of 6 seconds for the full loop */
+  }
+  
+  .text:nth-child(1) {
+    animation-delay: 0s; /* "Hello" starts immediately */
+  }
+  
+  .text:nth-child(2) {
+    animation-delay: 2s; /* "World" starts after 2 seconds */
+  }
+  
+  .text:nth-child(3) {
+    animation-delay: 4s; /* "Next.js" starts after 4 seconds */
+  }
+  
+  @keyframes rotateText {
+    0% {
+      opacity: 0;
+    }
+    16.67% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .hero{
+    padding-bottom: 50px;
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero1{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .hero2{
+    font-size: 3rem;
+    font-weight: 800;
+    max-width: 650px;
+    margin-bottom: 40px;
+    color: white;
+  }
+
+  .hero3{
+    margin-bottom: 50px;
+  }
+
+  .herobg{
+    background-color: rgb(0, 0, 0);
+  }
+
+  
+.services{
+  padding: 50px 20px;
+  padding-bottom: 0px;
+text-align: center;
+ 
+}
+
+.servicestext{
+  text-align: center;
+  font-size: 1.2rem;
+  
+  color: #3a3318;
+  margin: 0 auto;;
+  margin-bottom: 50px;
+  max-width: 800px;
+  
+}
+
+.servicesprob{
+  text-align: center;
+ font-size: 1.2rem;
+ font-weight: 700;
+}
+
+.servicesmain{
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 35px 0px;
+  color: #3a3318;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.serviceslist{
+  /* margin: 30px 110px; */
+  padding: 50px 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 75px;
+  
+}
+
+
+.servicesitem {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  background-color: #fff;
+  padding: 40px 20px;
+ 
+  border-radius: 10px;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),   /* Small shadow */
+    0 8px 10px rgba(0, 0, 0, 0.1),  /* Medium shadow */
+    0 12px 20px rgba(0, 0, 0, 0.1); /* Large shadow */
+
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+ 
+}
+
+.servicesitem:hover {
+  transform: translateY(-1%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.servicesheading{ 
+  font-size: 1.5rem;
+  font-weight: 800 ;
+  margin: 16px 0px;
+  color: #3a3318;
+}
+.servicesdes{
+  font-size: 0.95rem;
+  color: rgba(59, 58, 58, 0.897);
+}
+
+
+.gamblebg{
+  background-color:  rgb(252, 254, 255);
+  padding: 80px 0px;
+}
+
+.gamble{
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+      padding-right: 20px; 
+}
+
+.gamble1{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3a3318;
+  max-width: 1100px;
+  margin-bottom: 50px;
+ 
+}
+
+.gamble2{
+  max-width: 1000px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.gamble3{
+  font-weight: 600;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fuel{
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 100px 0px;
+  color: #3a3318;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+
+.cfogrid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 150px;
+   padding-bottom: 100px;
+   
+}
+.griditem{
+  position: relative;
+  padding: 100px 30px;
+}
+
+
+.cfotitle{
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #3a3318;
+  margin-bottom: 20px;
+}
+.cfodes{
+  color: black;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.testbg{
+  background-color:#000000;
+  margin-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.testtitle{
+  color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+font-size: 3rem;
+text-align: center;
+font-weight: 700;
+margin-bottom: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.streamProcessSection {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.streamTitle {
+  font-size: 2.8rem;
+  margin: 50px 0px;
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  margin-bottom: 70px;
+}
+
+.streamSteps {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.streamStep {
+  width: 22%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  margin-bottom: 30px;
+}
+
+.streamStep:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.streamStep:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.streamStep:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.streamStep:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.streamNumber {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.streamStepTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #c7a945;
+  margin-bottom: 20px;
+}
+
+.streamDescription {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.streamLine {
+  position: absolute;
+  top: 52%;
+  left: 13%;
+  width: 80%;
+  height: 3px;
+  background-color: #c7a945;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: lineGrow 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+  max-width: 860px;
+  margin: 0 auto;
+ 
+}
+
+.teambg{
+  background-color: aliceblue;
+}
+
+.team{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 20px;
+
+}
+.teamtext{
+  max-width: 1100px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  
+}
+
+.teamexpert{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 100px 0px;
+  margin-bottom: 30px;
+}
+
+.expertinlogo{
+  position: relative;
+  height: 150px;
+}
+
+/* .streamCircle:hover {
+  
+} */
+
+.streamStep:hover .streamCircle {
+  width: 20px;
+  height: 20px;
+}
+
+.streamCircle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c7a945;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1.5s; 
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  top: 24.5%;
+  left: 48%
+}
+
+.streamCircle1{
+  top: 22%;
+}
+
+.last{
+  background-color: #0000009a;
+  padding: 70px 20px;
+  position: relative;
+}
+
+
+
+.lastmain{
+  color: white;
+}
+.lasttext{
+  color: white;
+}
+
+.lastbutton{
+  max-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.pager{
+  background-image: url('/images/laptopimg.png');
+ 
+  background-attachment: fixed; /* Fixes the background image */
+  background-size: contain auto; 
+  background-repeat: no-repeat; 
+  background-position: center;
+
+
+}
+
+
+@media (max-width: 1080px) {
+
+
+    .optionaltext{
+      font-size: 2.5rem;
+    }
+
+
+  .serviceslist{
+    margin: 30px 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .streamStep {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .streamLine, .streamCircle  {
+    display: none; /* Hide the line for mobile */
+  }
+
+}
+
+
+.plan{
+  margin: 0 auto;
+  margin-bottom: 70px !important;
+  max-width: 900px;
+}
+
+
+.optional{
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.optionaltext{
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 600px;
+  text-align: start;
+}
+
+.optionallist{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.optionallist > div{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .amount, .currency{
+    font-size: 2.3rem !important;
+  }
+  .per{
+    font-size: 0.7rem !important;
+  }
+
+
+  .optional{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .optionaltext{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .optionallist > div{
+    font-size: 1rem;
+    text-align: left;
+  }
+
+
+}
+
+
+
+  @media (max-width: 750px) {
+  
+    .amount, .currency{
+      font-size: 3rem !important;
+    }
+    .per{
+      font-size: 0.9rem !important;
+    }
+   
+    .teamexpert{
+      display: grid;
+      grid-template-columns: 1fr 1fr;}
+
+    .streamSteps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .streamStep {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+  
+    
+
+  
+    .streamNumber {
+      font-size: 36px;
+    }
+  
+    .streamStepTitle {
+      font-size: 18px;
+    }
+  
+    .streamDescription {
+      font-size: 15px;
+    }
+  
+
+    .hero1{
+      margin-bottom: 30px;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+  
+    .cfogrid{
+      row-gap: 50px;
+      
+   }
+
+   .griditem{
+    padding: 20px 30px;
+  }
+
+    .hero2{
+      font-size: 2rem;
+      font-weight: 800;
+      max-width: 650px;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .servicesmain{
+      font-size: 2rem;}
+      .servicestext{
+        font-size: 1rem;}
+        .serviceslist{
+          padding: 50px 10px;
+        }
+        .griditem{
+          padding: 20px 30px;
+        }
+  }
+
+  @media (max-width: 550px) {
+
+
+    .optionaltext{
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .optionallist > div{
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    .teamexpert{
+      margin: 30px 0px;
+    }
+
+    .teamtext{
+      font-size: 36px;
+       margin-bottom: 0px;
+    }
+    .streamTitle {
+      font-size: 36px;
+    }
+  
+    .streamStep {
+      width: 90%;
+    }
+  
+    .streamNumber {
+      font-size: 30px;
+    }
+  
+    .streamStepTitle {
+      font-size: 16px;
+    }
+  
+    .streamDescription {
+      font-size: 14px;
+    }
+   
+
+    .fuel{
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+    .cfogrid{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      row-gap: 50px;
+      
+   }
+
+ 
+.item3{
+  order: 4;
+}
+.item4{
+  order: 3;
+}
+.item7{
+  order: 8;
+}
+.item8{
+  order: 7;
+}
+
+  }

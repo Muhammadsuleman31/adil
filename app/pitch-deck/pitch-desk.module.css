@@ -1,0 +1,406 @@
+.servicesbg{
+    background-color: black;
+    padding-top: 80px !important;
+}
+
+
+.services{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    color: white;
+    column-gap: 80px;
+}
+
+
+
+
+
+.servicesimg{
+    justify-self: end;
+}
+
+.servicesfs{
+    color: goldenrod;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.servicess{
+    font-size: 3rem;
+    max-width: 400px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+
+
+.servicest{
+    color: goldenrod;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    
+}
+
+.servicesf{
+    margin-bottom: 40px;
+}
+
+.ctabutton {
+    display: block;
+    padding: 10px 22px;
+    background-color: #e6bf35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700; 
+   
+  }
+  
+  .ctabutton:hover {
+    background-color: #b89738;
+   
+  }
+
+ 
+
+  .container  > *{
+    position: relative;
+    height: 100%;
+  }
+
+  .contentp{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgba(65, 60, 60, 0.788);
+  }
+  
+
+
+
+.underlineeffect {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0px; /* Space between text and underline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    overflow: hidden;
+   color: white;
+    
+}
+.underlineeffect {
+  display: inline;
+  position: relative;
+  background: linear-gradient(to bottom, #d6b84e 0%, #d6b84e 100%) left bottom / 100% 15px no-repeat;
+  transition: background-size 0.3s ease;
+  box-decoration-break: clone; /* Ensures underline works for each line */
+  padding-bottom: 2px; /* Slight padding to make room for the underline */
+}
+
+.underlineeffect:hover {
+  background-size: 100% 100%;
+}
+
+
+/* Contents.module.css */
+
+.contentsContainer {
+  max-width: 1100px; /* Adjust to match the exact width of the design */
+  margin: 0 auto;
+  padding: 70px;
+  font-family: Arial, sans-serif;
+}
+
+.contentsTitle {
+  font-size: 2.2rem;
+  font-weight:  700;
+  color: #4a3c22;
+  margin-bottom: 40px;
+}
+
+.contentsItem {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; /* To stack title and description vertically */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on all sides */
+  cursor: pointer;
+}
+
+.contentsItem:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contentsItemTitle {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color:#b89738;
+}
+
+.contentsIcon {
+  margin-right: 10px;
+  font-size: 0.9rem; /* Adjust to match the icon size in the image */
+  color: #bfa542;
+}
+
+.contentsDescription {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 10px;
+  line-height: 1.6;
+  margin-left: 32px; /* Ensure this aligns under the text, not the icon */
+}
+
+.whybg{
+  background-color: rgb(32, 32, 32);
+}
+
+.whyContainer{
+  
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 150px 50px;
+  color: white;
+}
+
+
+
+
+
+.whytext{
+  font-size: 2.8rem;
+ color: #bfa542;
+  max-width: 1000px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  
+}
+
+.whylist{
+  display: flex;
+  flex-direction: column;
+}
+.whylisttext{
+  margin-top: 20px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   margin-bottom: 50px;
+}
+
+.whylistcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
+}
+
+.whycontaineritem{
+  margin-top: 200px;
+}
+
+.whyicon{ 
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.whyicontext{
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.stepscontainer{
+
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.stepstext{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.stepsf .underlineeffect {
+  color:#3a3318 !important;
+}
+
+.stepsf{
+  font-size: 2.8rem;
+   max-width: 510px;
+   font-weight: 400;
+}
+
+.stepss{
+  font-size: 1.1em;
+  color: rgba(53, 49, 49, 0.842);
+}
+
+.stepspoints{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.steppointsitem{
+ display: flex;
+  padding: 30px 0px;
+  border: solid 2px rgba(128, 128, 128, 0.171);
+  border-radius: 8px;
+  /* justify-content: center; */
+  transition: transform 0.3s ease,
+  
+}
+
+.steppointsitem:hover{
+  transform: translateY(-2%);
+}
+
+.steppointsf{
+    display: flex;
+    align-items: center;
+   padding: 0 50px;
+   font-size: 2.5rem;
+   color:#b89738;
+}
+.steppointsstitle{
+  color:#3a3318;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+.steppointssdes{
+    font-size: 0.95rem;
+    color: rgba(53, 49, 49, 0.842);
+  padding-right: 20px;
+}
+
+.anchor{
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherits text color from parent */
+  background: none;       /* Removes any background */
+  border: none;           /* Removes any border */
+  padding: 0;             /* Removes any padding */
+  margin: 0;              /* Removes any margin */
+  font: inherit;          /* Inherits font properties from parent */
+  outline: none;          /* Removes focus outline */
+}
+
+.contactformbg{
+  scroll-margin-top: 80px; 
+}
+
+@media (max-width: 1000px) {
+
+
+
+}
+
+  @media (max-width: 900px) {
+
+    .stepstext{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+     
+    }
+
+    .container{
+        display: none;
+    }
+    .services{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+   
+  
+  }
+
+  .testbg{
+    background-color:#f8f9fa;
+    margin-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+.testtitle{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+
+  @media (max-width: 750px) {
+
+    .stepscontainer{
+      padding: 0 70px;
+   }
+
+   .stepsf{
+    font-size: 2.5rem;
+  }
+  
+
+    .whylistcontainer{
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr 1fr 1fr ;
+      row-gap: 50px;
+    }
+    
+
+   
+  }
+
+  @media (max-width: 500px) {
+
+    .stepsf{
+      font-size: 2rem;
+    }
+
+    .stepscontainer{
+       padding: 0 40px;
+    }
+
+  .contentsContainer{
+    padding: 30px;
+  }
+
+    .contentsItem {
+      padding: 15px;
+  }
+
+  .contentsItemTitle {
+      font-size: 16px;
+  }
+
+  .contentsDescription {
+      font-size: 13px;
+  }
+
+    
+
+  
+
+  }

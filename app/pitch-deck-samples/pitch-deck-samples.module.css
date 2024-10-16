@@ -1,0 +1,85 @@
+.main{
+    padding-top: 100px;
+    
+
+    
+}
+
+
+.pdfcontainer{
+    z-index: 10000;
+    position: relative;
+}
+
+
+
+.title{
+    margin: 50px auto;
+    font-weight: 600;
+    max-width: 600px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 50px;
+    
+}
+
+.plancontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+   padding-left: 50px;
+   padding-right: 50px;
+   
+}
+
+.planitem{
+    
+    aspect-ratio: 9 / 12; /* This sets the aspect ratio directly */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image stays within the rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+ 
+}
+
+.planitem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+ 
+    .plancontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+ 
+    .plancontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+ 
+    .plancontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}

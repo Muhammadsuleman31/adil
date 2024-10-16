@@ -1,0 +1,86 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+  
+  .formGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    column-gap: 20px;
+  }
+  
+  .last{
+    width: 100% !important;
+  }
+
+  .input {
+    width: 48%; /* Adjusting for two columns */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .button {
+    background-color: #c5a848;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #b5963e;
+  }
+
+  
+  
+  .statusMessage {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 3px solid white;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+    
+  @media (max-width: 500px) {
+    .input {
+      width: 90%; /* Adjusting for two columns */
+    }
+    .last {
+      width: 90% !important; /* Adjusting for two columns */
+    }
+
+    .button{
+      width: 80% !important;
+    }
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }

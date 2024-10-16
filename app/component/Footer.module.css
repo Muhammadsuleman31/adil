@@ -1,0 +1,91 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+  
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0px auto;
+    border-top: solid 2px rgb(228, 224, 224);
+    
+  }
+  
+  .logoSection {
+    max-width: 300px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+  }
+  
+  .logoImage {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .logoDescription {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .socialIcons {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .socialIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+  
+  .linksSection {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #3a3318;
+  }
+  
+  .linkList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linkItem {
+    margin-bottom: 25px;
+  }
+  
+  .linkItem a {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .linkItem a:hover {
+    color: #333;
+  }
+
+  
+@media (max-width: 700px) {
+
+    .footerContainer {
+       flex-direction: column; 
+      }
+
+}
+@media (max-width: 400px) {
+
+  .linksSection {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    
+  }
+
+}

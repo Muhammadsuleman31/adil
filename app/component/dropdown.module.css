@@ -1,0 +1,128 @@
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 4000;
+    border-radius: 20px;
+    width: 250px;
+    text-align: left;
+    top: 60px;
+    font-size: 0.8rem;
+  }
+
+  .empty{
+    height: 50px;
+    position: absolute;
+   width: 300px;
+    
+  }
+  
+  .dropdown:hover .dropdownContent {
+    display: block;
+    padding-top: 15px;
+   
+  }
+  
+  .dropdown .dropdownContent a {
+    color: rgb(0, 0, 0) !important; /* Force the color to be black */
+  }
+
+  .dropdownContent a {
+    color: rgb(0, 0, 0);
+   margin-bottom: 10px;
+   padding: 10px 0px;
+  
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownContent a:hover {
+    background-color: #d6d4d4e1;
+  }
+  
+  .arrowDown {
+    font-size: 0.6rem;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .arrowUp {
+    font-size: 0.6rem;
+    display: inline-block;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .arrow{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+  }
+
+  .cross{
+    position: fixed;
+    top: 2rem;
+    font-size: 2.5rem;
+   color: rgb(61, 61, 61);
+   margin-left: 10px;
+   z-index: 5000;
+   cursor: pointer;
+  }
+
+
+  @media (max-width: 1000px) {
+    .dropdownContent{
+      position: fixed;
+      top: 0px;       
+      height: 100vh;
+      margin: auto 0;
+      padding: auto 0px;
+      width: 262px;
+      right: 0px;
+      border-radius: 0; 
+      font-size: 0.5rem !important;
+      
+      
+    }
+
+    .dropdownContent a{
+      
+    }
+
+    .dropdownContent a:nth-child(1){
+   
+      margin-top: 120px;
+    }
+
+  
+    @keyframes slideInFromLeft {
+      0% {
+        right:100%;
+        opacity: 0;
+      }
+      100% {
+        right:0%;
+        opacity: 1;
+      }
+    }
+    
+   
+    .dropdownContent {
+       animation: slideInFromLeft 1s ease-out;
+      
+      display: inline-block;
+      background-color: rgba(250, 250, 250, 0.877);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+   }
