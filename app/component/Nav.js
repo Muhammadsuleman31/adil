@@ -10,7 +10,7 @@ const Nav = ()=>{
 
     return (
         <div className={styles.nav}>
-          <div className={styles.name}>LOGO</div>
+          <div className={styles.name}>AS GLOBAL</div>
           <div className={styles.links}>
           <a href="/">Home</a>
           <Dropdown title={"Past Work"} links={["Business Plan Samples", "Pitch Deck Samples"]} />          
